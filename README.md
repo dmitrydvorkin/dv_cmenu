@@ -5,8 +5,6 @@ Simple context menu mootools implementation.
 
 [Demo](http://dv.tibbo.com/dv_cmenu/)
 
-![Screenshot](http://dv.tibbo.com/dv_cmenu/dv_cmenu.png)
-
 How to use
 ----------
 In head:
