@@ -1,0 +1,40 @@
+#divCM {
+ border: 1px solid #898989;
+ display: none;
+ position: absolute;
+ cursor: pointer;
+}
+
+.cmenu {
+    margin: 0;
+    padding: 0.3em;
+    list-style-type: none;
+    background-color: white;
+	color:black;
+}
+
+.cmenu li{
+	padding-left:3px;
+	padding-right:3px;
+	margin:2px;
+}
+
+.cmenu li:hover {
+    background-color: #096DD1;
+    text-decoration: none;
+    color: white;
+}
+
+.cmenu hr {
+    border: 0;
+    border-bottom: 1px solid grey;
+    margin: 3px 0px 3px 0px;
+    width: 10em;
+}
+
+.cmenu .topSep {
+    font-size: 90%;
+    border-top: 1px solid gray;
+    margin-top: 0.3em;
+    padding-top: 0.3em;
+}
