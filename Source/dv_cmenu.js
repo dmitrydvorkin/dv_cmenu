@@ -53,8 +53,14 @@ requires:
    if ( d != 'none') return;
    e.setStyle( 'left', _x + 'px');
    e.setStyle( 'top', _y + 'px');
-   e.setStyle( 'zIndex',  1);
+   if ( e.getStyle( 'zIndex') == '') e.setStyle( 'zIndex',  1);
    e.setStyle( 'display', 'block');
+ },
+
+ // to call from userspace if needed
+ hide_hard: function() {
+   $(this.obj_id).empty();
+   $(this.obj_id).setStyle( 'display', 'none');
  },
 
  // context menu hide
@@ -95,7 +101,7 @@ requires:
          mouseover: function( _e) {
            if ( _e) _e.stop();
            scope_obj.set_over( true);  return( false);
-         },
+         }
        },
      });
      lis.push( li);
@@ -133,6 +139,6 @@ requires:
    if ( x_diff <= 0) e_pz.x += x_diff;
    if ( y_diff <= 0) e_pz.y += y_diff;
    e.setPosition( e_pz);
-  },
+  }
 
 });
